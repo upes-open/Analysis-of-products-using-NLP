@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+        width: 100%;
+        color: white;
+        font-family: sans-serif;
+}
+
+
+    /* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+}
+
+.nav {
+    padding: 0 5vw 0 15vw;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20vw 0 0;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+}
+
+.leftnav img {
+    height: 3.3vw;
+}
+
+.logo-line {
+    width: 2px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: rgb(177, 171, 231);
+}
+
+.leftnav a {
+    color: rgb(160, 152, 183);
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.leftnav a:hover {
+    color: #515278;
+}
+
+.rightnav ul li a {
+    text-decoration: none;
+    color: rgb(160, 152, 183);
+    font-size: 1.2vw;
+}
+
+.rightnav ul li a:hover {
+    color: #515278;
+    font-weight: bolder;
+}
+
+.upper {
+    height: 92vh;
+    width: 100%;
+    background-image: url("nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.upperleft {
+    height: 92vh;
+    width: 60%;
+    padding: 10vh 5vw; 
+}
+
+.upperleft h1 {
+    margin-bottom: 5vh;
+    color: #7677ab;
+    font-size: 4vw;
+}
+
+.upperleft h1 span {
+    color: #898bb5;
+}
+
+.upperleft p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 4vw 20px 10px;
+    border-radius: 20px;
+}
+
+.upperright {
+    height: 92vh;
+    width: 40%;
+}
+
+.below {
+    background-color: #24253d;
+    color: #b5af8e;
+    width: 100%;
+    height: calc(70vh - 4px);
+    display: flex;
+}
+
+.leftbelow, .rightbelow {
+    padding: 5vh 5vw;
+    width: 50%;
+}
+
+.leftbelow {
+    border-right: 4px solid rgb(22, 23, 44);
+}
+
+
+
+/*White separator */
+.separation {
+    background-color: rgb(206, 210, 255);
+    width: 100%;
+    height: 2px;
+}
+
+
+/* FOOTER - BOTTOM PAGE */
+.bottom {
+    height: 30vh;
+    width: 100%;
+    background-color: #151520;
+    padding: 5vh;
+    text-align: center;
+}
+
+
+.bottom-h1 {
+    font-size: 1.2vw;
+    color: #bcbaf2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 3vh 1vw;
+    background-color: rgb(126, 127, 194);
+    border-radius: 50%;
+    height: 2.5vw;
+    width: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    overflow: hidden;
+}
+
+.social-icons a i {
+    color: #000;
+}
+
+.social-icons a:hover {
+    background-color: #151520;
+    transition: 0.5s;
+}
+
+.social-icons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.copyright {
+    font-size: 0.8vw;
+    color: #635a99;
+    margin-top: 3.5vh;
+}

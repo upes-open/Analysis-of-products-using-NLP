@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Radar</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav" id="mynav">
+      <div class="leftnav">
+        <img class="logoimg" src="logo.png" alt="logo" />
+        <div class="logo-line"></div>
+        <a href="index.html"><strong>Review Radar</strong></a>
+      </div>
+      <div class="rightnav">
+        <ul>
+          <li>
+            <a href="index.html"><strong>Home</strong></a>
+          </li>
+          <li>
+            <a href="about.html"><strong>About</strong></a>
+          </li>
+          <li>
+            <div class="searchbox">
+              <input
+                class="searchinput"
+                type="search"
+                placeholder="eg. earphones"
+              />
+              <div
+                class="searchicon"
+                onclick="smoothScroll(document.getElementById('midd'))"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="top">
+      <div class="lefttop">
+        <h1>The <span>Best Place</span> to Judge any <span>Product</span> !</h1>
+        <ul>
+          <li>
+            <i class="fa-solid fa-circle-check" style="color: #1b6d97"></i>
+            <strong>Accurate Results</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check" style="color: #1b6d97"></i>
+            <strong>Easy-to-use Interface</strong>
+          </li>
+        </ul>
+        <button class="lefttop-btn"><strong>Search Products</strong></button>
+      </div>
+      <div class="righttop">
+        <img src="" alt="shopping image" />
+
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1572569979132-b4f10c9ec185?auto=format&fit=crop&q=80&w=1889&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=2065&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.pinimg.com/736x/f8/42/35/f842353386a3d5b7fa7b9fb6233ae224.jpg"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1572569979132-b4f10c9ec185?auto=format&fit=crop&q=80&w=1889&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=2065&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://i.pinimg.com/736x/f8/42/35/f842353386a3d5b7fa7b9fb6233ae224.jpg"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="80"
+                width="200"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle" id="midd">
+      <h1>Best Products based on your search</h1>
+      <div class="cards-body">
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://pyxis.nymag.com/v1/imgs/079/792/3ed0d94be0a9bd3d023f00532889bab152-30-chandler-bing.2x.rsquare.w190.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Chandler Bing</h2>
+
+                  <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est error esse cupiditate quae vero consectetur veniam! Excepturi dicta reiciendis ad.  
+                  </p>
+
+                  <button class="button">view more</button>
+                </div>
+              </div>
+          
+
+              
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="separation"></div>
+
+    <div class="bottom">
+      <div class="bottom-h1">
+        <h1><tt>We are Social !</tt></h1>
+      </div>
+      <div class="social-icons">
+        <a target="_blank" href=""><i class="fa-regular fa-envelope"></i></a>
+        <a target="_blank" href=""><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="copyright">© Review Radar 2023</div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
